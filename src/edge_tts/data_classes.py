@@ -73,7 +73,7 @@ class TTSConfig:
         )
         self.validate_string_param("rate", self.rate, r"^[+-]\d+%$")
         self.validate_string_param("volume", self.volume, r"^[+-]\d+%$")
-        self.validate_string_param("pitch", self.pitch, r"^[+-]\d+Hz$")
+        self.validate_string_param("pitch", self.pitch, r"^[+-]\d+(Hz|%)$")
 
 
 class UtilArgs(argparse.Namespace):
